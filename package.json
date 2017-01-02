@@ -1,0 +1,24 @@
+{
+  "name": "@nx-js/dom-util",
+  "version": "1.0.0",
+  "description": "NX DOM utilities.",
+  "main": "dom.js",
+  "author": {
+    "name": "Miklos Bertalan",
+    "email": "miklos.bertalan@risingstack.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nx-js/dom-util.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nx-js/dom-util/issues"
+  },
+  "homepage": "http://nx-framework.com",
+  "license": "MIT",
+  "keywords": [
+    "nx",
+    "dom",
+    "utility"
+  ]
+}
