@@ -1,7 +1,7 @@
 {
   "name": "@nx-js/dom-util",
   "version": "1.0.0",
-  "description": "NX DOM utilities.",
+  "description": "A NX utility, consisting of a collection of DOM helper functions.",
   "main": "dom.js",
   "author": {
     "name": "Miklos Bertalan",
