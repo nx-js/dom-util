@@ -13,7 +13,9 @@ module.exports = {
   moveContent,
   removeContent,
   clearContent,
-  mutateContext
+  mutateContext,
+  findAncestor,
+  findAncestorProp
 }
 
 function extractContent (elem) {
@@ -137,4 +139,24 @@ function mutateContext (elem, index, extraContext) {
   if (startNode && startNode.$contextState) {
     Object.assign(startNode.$contextState, extraContext)
   }
+}
+
+function findAncestorProp (node, prop) {
+  node = findAncestor(node, node => node[prop] !== undefined)
+  return node ? node[prop] : undefined
+}
+
+function findAncestor (node, condition) {
+  if (!node instanceof Node) {
+    throw new TypeError('first argument must be a node')
+  }
+  if (typeof condition !== 'function') {
+    throw new TypeError('second argument must be a function')
+  }
+
+  node = node.parentNode
+  while (node && !condition(node)) {
+    node = node.parentNode
+  }
+  return node
 }
