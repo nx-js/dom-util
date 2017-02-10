@@ -1,6 +1,6 @@
 {
   "name": "@nx-js/dom-util",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A NX utility, consisting of a collection of DOM helper functions.",
   "main": "dom.js",
   "author": {
